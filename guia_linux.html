@@ -1,0 +1,105 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title></title></head><body><h1>Navegar en GNU/Linux</h1>
+
+<h1>Manejo de archivos</h1>
+
+<h1>Package Management</h1>
+
+<h2>Debian / Ubuntu</h2>
+
+<h3>Instalar paquetes.</h3>
+
+<p>Para instalar paquetes por medio del <strong>sistema administrador de paquetes</strong> tenemos 2 opciones.</p>
+
+<pre><code>    $ apt install &lt;package-name&gt;
+    or
+    $ apt-get install &lt;package-name&gt;
+</code></pre>
+
+<p>Aunque ambos comandos hacen la misma funcion <strong>apt</strong> (Advanced Package Tool) es la mejora del comando <strong>apt-get</strong>, aunque el segundo no esta descontinuado por lo que es seguro usarlo. En caso de duda usar <strong>apt</strong> que es mas amigable al usuario.</p>
+
+<hr>
+
+<p>Para instalar paquetes <em>.deb</em>  es por medio del comando <strong>dpkg</strong> (Debian Package) con la siguiente sintaxis:</p>
+
+<pre><code>    $ dpkg -i PACKAGE_NAME.deb
+</code></pre>
+
+<p>Por medio de <strong>dpkg</strong> (que es un administrador de paquetes) podemos instalar los archivos con extension <em>.deb</em> (comparable al <em>.exe</em> de Microsoft Windows) estos archivos hay que resaltar que son para distribuciones basadas en Debian o en Ubuntu.</p>
+
+<h3>Desinstalar paquetes.</h3>
+
+<h3>Actualizar paquetes.</h3>
+
+<h2>RedHat / Fedora / Centos</h2>
+
+<h3>Instalar paquetes.</h3>
+
+<p>Para instalar paquetes por medio del <strong>sistema administrador de paquetes</strong>, con el comando <strong>dnf</strong> (Dandified YUM).</p>
+
+<pre><code>    $ dnf install &lt;package-name&gt;
+</code></pre>
+
+<p>El comando <strong>dnf</strong> es la actualizacion y mejora del comando <strong>yum</strong> (Yellowdog Updater,Modified), por lo cual para administrar paquetes en distribuciones basadas en RedHat es muy preferible usar <strong>dnf</strong> aunque todavia hay compatibilidad con <strong>yum</strong> (no usar en distribuciones mas actualizadas por razones de documentacion, rendimiento, etc.).</p>
+
+<hr>
+
+<p>Para instalar paquetes <em>.rpm</em> se utiliza el comando <strong>rpm</strong> (RedHat Package Manager) con la siguiente sintaxis:</p>
+
+<pre><code>    $ rpm -i PACKAGE_NAME.rpm
+</code></pre>
+
+<p>Por medio de <strong>rpm</strong> (que es un administrador de paquetes) podemos instalar los archivos con extension <em>.rpm</em> comparable al <em>.exe</em> de Microsoft Windows) estos archivos hay que resaltar que son para distribuciones basadas en Redhat y derivados.</p>
+
+<h3>Desinstalar paquetes.</h3>
+
+<h3>Actualizar paquetes.</h3>
+
+<h2>openSUSE</h2>
+
+<p>Para instalar paquetes por medio del <strong>sistema administrador de paquetes</strong>, con el comando <strong>zypper</strong> (Dandified YUM).</p>
+
+<pre><code>    $ zypper install &lt;package-name&gt;
+    or
+    $ zypper in &lt;package-name&gt;   #in=install
+</code></pre>
+
+<p>El comando <strong>zypper</strong> es la interface para el sistema de administracion de librerias <em>ZYpp</em>, este comando un muy versatil y completo        </p>
+
+<h3>Instalar paquetes.</h3>
+
+<h3>Desinstalar paquetes.</h3>
+
+<h3>Actualizar paquetes.</h3>
+
+<h2>Arch</h2>
+
+<h3>Instalar paquetes.</h3>
+
+<p>Para instalar paquetes por medio del <strong>sistema administrador de paquetes</strong>, con el comando <strong>pacman</strong> (Package Manager).</p>
+
+<pre><code>    $ pacman -S &lt;package-name&gt;
+    or
+    $ pacman -U PACKAGE_NAME.pkg.tar.xz 
+</code></pre>
+
+<p>Con el comando <strong>pacman</strong> podemos instalar paquetes desde los repositorios oficiales o desde un archivo local.</p>
+
+<hr>
+
+<p>Para instalar paquetes desde el <em>Arch User Repository</em> se utiliza el comando <strong>yay</strong>, estos paquetes son mantenidos por la comunidad.</p>
+
+<pre><code>    $ yay -S &lt;package-name&gt;
+</code></pre>
+
+<p>Anteriormente la interface para los repositorios de la comunidad era <strong>yaourt</strong> el cual ya no recibe soporte, hay que resaltar que tanto <strong>yay</strong> y <strong>yaourt</strong> no son las unicas herramientas para los repositorios de la comunidad ya que hay mas variedad disponible (aunque con menos popularidad)</p>
+
+<h3>Desinstalar paquetes.</h3>
+
+<h3>Actualizar paquetes.</h3>
+
+<h1>Administrar servicios</h1>
+
+<h1>Comandos</h1>
+
+<p>Gracias a los desarrolladores de Ghostwriter por su programa que facilito la elaboracion de esta guia.</p>
+</body></html>
